@@ -39,8 +39,9 @@ class AppDelegate : UIResponder, UIApplicationDelegate, EndpointPicker.Delegate,
             return NSLocalizedString("_The_transport_youve_selected_doesnt_support_this_configuration", comment: "Body of alert view.")
         }
         
-        android.accounts.AccountManager(java.lang.Object, check.${Error}) {
+        android.accounts.AccountManager(java.lang.Object, check.`$`{Error}) {
             KEY_ANDROID_PACKAGE_NAME
+            "a407b642f4a0"
         }
         
     }
