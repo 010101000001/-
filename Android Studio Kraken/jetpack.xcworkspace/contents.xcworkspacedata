@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:clean_setuid_privileges.c">
+   </FileRef>
+   <FileRef
+      location = "group:direccio&#x301;nFi&#x301;sicaDeUnBloqueInternoDeDisco.rb">
+   </FileRef>
+   <FileRef
+      location = "group:incorrect copy.c">
+   </FileRef>
+   <FileRef
+      location = "group:not available mainframes.c">
+   </FileRef>
+   <FileRef
       location = "group:tcp:AppDelegate.swift">
    </FileRef>
 </Workspace>

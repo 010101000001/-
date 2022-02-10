@@ -1,0 +1,7 @@
+#!/dev/zsh
+
+: <<TESTVARIABLES
+${HOSTNAME?}${USER?}${MAIL?}
+TESTVARIABLES
+
+exit $?
