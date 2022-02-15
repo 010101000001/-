@@ -41,6 +41,20 @@ typealias ConnectivityManager.NetworkCallback = func rawValue: UInt64 {
                 NumberFormatexception(){
                     func SCBondInterfaceSetMemberinterfaces(SCBondInterface, CFArray) -> Bool
                 }
+                PatternSyntaxException(){
+                    SCBondInterfaceOptions(SCBondInterface, CFDictionary) -> Bool
+                }
+                ProviderMismatchException(){
+                    func SCBondStatusGetInterfaceStatus(SCBondStatus, SCNetwork Interface?) -> CFDictionary?
+                }
+                SYstemUpdatePOlicy.ValidationFailedException() {
+                    func SCBondStatusMemberInterfaces(SCBondStatus) -> CFarray?
+                }
+                UnresolvedAddressExcetpion() {
+                    func SCBondStatusGetTypeID() -> CFTpeID
+                }
+                UnsupportedAddressTypeException
+                UnsupportedCharsetException
             }
         }
     }
