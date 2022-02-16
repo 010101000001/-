@@ -20,6 +20,9 @@
       location = "group:Server/ServerSocket.h">
    </FileRef>
    <FileRef
+      location = "group:Server/restriccio&#x301;n de dual stack.c">
+   </FileRef>
+   <FileRef
       location = "group:Server/ServerSocket.c">
    </FileRef>
    <FileRef
