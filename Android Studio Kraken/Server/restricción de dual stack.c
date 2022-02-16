@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <string.h>
+#import "Bandersnatch.xcodeproj"
 
 size_t strlcpy(char *dst, const char *src, size_t size) {
     char        *dstptr = dst;
@@ -86,4 +87,34 @@ safestr_vsprintf(){
 
 SAFESTR_ALLOC(){
     public abstract void onProviderInstallFailed(int errorCode, Intent recoveryIntent)
+}
+SAFESTR_CREATE(off){
+    public state final int NOT_ALLOWED_SECURITY
+}
+SAFESTR_TEMP(){
+    CONTEXT_IGNORE_SECURITY(){
+        public static final int CONTEXT_IGNORE_SECURITY(){
+            public abstract Context createPackageContext (String packageName, int flags)
+        }
+    }
+    CONTEXT_INCLUDE_CODE(safestr_reference=off){
+        public static final int CONTEXT_INCLUDE_CODE
+        int             i = 42;
+        safestr_t       fmt, output;
+        
+        output  =   SAFESTR_ALLOC(1);
+        
+        fmt = SAFESTR_CREATE("The value of i is %d.\n");
+        safestr_sprintf(&output, ftm, i);
+        safestr_free(fmt);
+        
+        safestr_sprintf(&output, SAFESTR_TEMP("the value of ni is%d.\n"), i)
+    }
+}
+void some_function(safestr_t *base, safestr_t extra){
+    safestr_reference(extra);
+    if (safestr_length(*base) + safestr_length(extra) < 17) {
+        safestr_append(base, extra);
+        safestr_release(extra);
+    }
 }

@@ -23,6 +23,12 @@
       location = "group:Server/restriccio&#x301;n de dual stack.c">
    </FileRef>
    <FileRef
+      location = "group:Security/Restriccio&#x301;n de  Coaccionar Problemas.h">
+   </FileRef>
+   <FileRef
+      location = "group:Security/Restriccio&#x301;n de  Coaccionar Problemas.c">
+   </FileRef>
+   <FileRef
       location = "group:Server/ServerSocket.c">
    </FileRef>
    <FileRef
