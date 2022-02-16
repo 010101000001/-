@@ -14,6 +14,18 @@
       location = "group:not available mainframes.c">
    </FileRef>
    <FileRef
+      location = "group:Server/ServerValue.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Server/ServerSocket.h">
+   </FileRef>
+   <FileRef
+      location = "group:Server/ServerSocket.c">
+   </FileRef>
+   <FileRef
+      location = "group:autorizacio&#x301;n verbal.rb">
+   </FileRef>
+   <FileRef
       location = "group:tcp:AppDelegate.swift">
    </FileRef>
 </Workspace>
